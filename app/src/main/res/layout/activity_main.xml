@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/gesture_input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="输入手势对应值" />
+
+    <Button
+        android:id="@+id/gesture_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/gesture_input"
+        android:onClick="btnClick"
+        android:text="手势输入" />
+
+    <Button
+        android:id="@+id/gesture_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gesture_save"
+        android:onClick="btnClick"
+        android:text="手势识别" />
+
+    <ListView
+        android:id="@+id/gesture_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gesture_find" />
+
+</RelativeLayout>
